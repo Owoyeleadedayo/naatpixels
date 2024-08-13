@@ -10,7 +10,7 @@ const Banner = () => {
         <Flex
           bgColor={"#f1f2f3"}
           width={"100%"}
-          height={"600px"}
+          height={"100%"}
           px={"60px"}
           py={"40px"}
           flexDir={"column"}
@@ -50,15 +50,14 @@ const Banner = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 ease: "easeInOut",
-                delay: 0.5,
-                duration: 0.7,
-                stiffness: 200,
+                delay: 0.8,
+                duration: 0.9,
               }}
               viewport={{ once: true }}
             >
               <Flex>
-                <Heading fontFamily={"Ubuntu"} textTransform={"uppercase"}>
-                  I’m Nat – a passionate photographer with over 10 years of
+                <Heading fontSize={'24px'} fontFamily={"Ubuntu"} textTransform={"capitalize"}>
+                  I’m NAAT – a passionate photographer with over 4 years of
                   experience, dedicated to capturing compelling and visually
                   stunning imagery.
                 </Heading>
@@ -69,13 +68,12 @@ const Banner = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 ease: "easeInOut",
-                delay: 0.5,
-                duration: 0.7,
-                stiffness: 200,
+                delay: 0.8,
+                duration: 0.9,
               }}
               viewport={{ once: true }}
             >
-              <Flex pt={"70px"}>
+              <Flex>
                 <Text fontFamily={"Ubuntu"}>
                   Welcome to my portfolio! I’m passionate about working on
                   diverse projects and am open to freelance opportunities. Take
@@ -90,13 +88,12 @@ const Banner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               ease: "easeInOut",
-              delay: 0.5,
-              duration: 0.7,
-              stiffness: 200,
+              delay: 0.8,
+              duration: 0.9,
             }}
             viewport={{ once: true }}
           >
-            <Flex width={"100%"} h={"350px"}>
+            <Flex width={"100%"} h={"400px"}>
               <Image
                 src={Ban}
                 width={"100%"}
