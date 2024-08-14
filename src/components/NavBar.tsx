@@ -32,10 +32,10 @@ const NavBar = () => {
               key={index}
               fontFamily={"Ubuntu"}
               fontSize={"18px"}
-              color={"white"}
+              color={"#f1f2f3"}
               justifyContent={"center"}
               alignItems={"center"}
-              _hover={{ textDecoration: "none" }}
+              _hover={{ textDecoration: "none", color: "white" }}
             >
               {item.name}
             </Link>

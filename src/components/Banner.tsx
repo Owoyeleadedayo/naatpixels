@@ -56,8 +56,8 @@ const Banner = () => {
               viewport={{ once: true }}
             >
               <Flex>
-                <Heading fontSize={'24px'} fontFamily={"Ubuntu"} textTransform={"capitalize"}>
-                  I’m NAAT – a passionate photographer with over 4 years of
+                <Heading fontFamily={"Ubuntu"} textTransform={"uppercase"}>
+                  I’m Naat – a passionate photographer with over 4 years of
                   experience, dedicated to capturing compelling and visually
                   stunning imagery.
                 </Heading>
@@ -73,7 +73,7 @@ const Banner = () => {
               }}
               viewport={{ once: true }}
             >
-              <Flex>
+              <Flex pt={"70px"}>
                 <Text fontFamily={"Ubuntu"}>
                   Welcome to my portfolio! I’m passionate about working on
                   diverse projects and am open to freelance opportunities. Take
@@ -93,7 +93,7 @@ const Banner = () => {
             }}
             viewport={{ once: true }}
           >
-            <Flex width={"100%"} h={"400px"}>
+            <Flex>
               <Image
                 src={Ban}
                 width={"100%"}
