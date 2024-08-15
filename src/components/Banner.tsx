@@ -1,9 +1,13 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import GPS from '../assets/Images/gps.png'
 import Ban from "../assets/Images/20240813_193220_187.jpg"
+import { useEffect } from "react";
 
 const Banner = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
   return (
     <>
       <motion.div>
@@ -15,6 +19,7 @@ const Banner = () => {
           py={"40px"}
           flexDir={"column"}
           gap={"30px"}
+          pt={"80px"}
         >
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -44,7 +49,7 @@ const Banner = () => {
               </Flex>
             </Flex>
           </motion.div>
-          <Flex pt={"20px"} gap={"30px"}>
+          <Flex gap={"30px"}>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -93,12 +98,23 @@ const Banner = () => {
             }}
             viewport={{ once: true }}
           >
-            <Flex>
+            <Flex position={'relative'}>
               <Image
                 src={Ban}
                 width={"100%"}
                 height={"100%"}
                 objectFit={"cover"}
+              />
+              <Box
+                position={"absolute"}
+                top={"0px"}
+                left={"0px"}
+                width={"100%"}
+                height={"100%"}
+                bgGradient={
+                  "linear(to-b, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))"
+                }
+                zIndex={1}
               />
             </Flex>
           </motion.div>
