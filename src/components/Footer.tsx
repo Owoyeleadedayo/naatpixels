@@ -22,7 +22,7 @@ const Footer = () => {
       },
     ];
 
-    const text = [{ label: "All rights Copyright &copy; 2024" }, {label: "NewAgeAndTimeless"}];
+    const text = [{ label: `All rights Copyright ${"&copy;"} 2024` }, {label: "NewAgeAndTimeless"}];
   return (
     <>
       <Flex
