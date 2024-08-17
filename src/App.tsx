@@ -9,6 +9,7 @@ import Portrait from './pages/Portrait';
 import WedandBridal from './pages/WedandBridal';
 import Lifestyle from './pages/Lifestyle';
 import Kiddies from './pages/Kiddies';
+import Contact from './pages/Contact';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/portrait" element={<Portrait />} />
           <Route path="/wedandbridal" element={<WedandBridal />} />
           <Route path="/lifestyle" element={<Lifestyle />} />
