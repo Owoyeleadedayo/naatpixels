@@ -10,10 +10,10 @@ const Contact = () => {
           bgColor={"#f1f2f3"}
           width={"100%"}
           height={"100%"}
-          px={"60px"}
+          px={{ lg: "60px", base: "20px" }}
           py={"40px"}
-          flexDir={"row"}
-          gap={"30px"}
+          flexDir={{ lg: "row", base: "column" }}
+          gap={{ lg: "30px", base: "10px" }}
           pt={"129px"}
         >
           <Flex width={"50%"}>
@@ -29,14 +29,22 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <Flex flexDirection={"column"} gap={"20px"}>
-                <Heading fontFamily={"Ubuntu"} textTransform={"uppercase"}>
+                <Heading
+                  fontSize={{ lg: "30px", base: "18px" }}
+                  fontFamily={"Ubuntu"}
+                  textTransform={"uppercase"}
+                >
                   are you interested in collaboration? let's get in touch
                 </Heading>
                 <Flex flexDirection={"column"}>
-                  <Text fontFamily={"Ubuntu"} textTransform={"capitalize"}>
+                  <Text
+                    fontFamily={"Ubuntu"}
+                    color={"grey"}
+                    textTransform={"capitalize"}
+                  >
                     Get in Touch with me
                   </Text>
-                  <Text fontFamily={"Ubuntu"} fontSize={"16px"}>
+                  <Text fontFamily={"Ubuntu"} color={"grey"} fontSize={"16px"}>
                     naatpixels@gmail.com
                   </Text>
                 </Flex>
@@ -55,12 +63,17 @@ const Contact = () => {
               }}
               viewport={{ once: true }}
             >
-              <Text fontFamily={"Ubuntu"} fontStyle={"italic"} mb={2}>
+              <Text
+                fontFamily={"Ubuntu"}
+                color={"grey"}
+                fontStyle={"italic"}
+                mb={2}
+              >
                 // Send a message
               </Text>
               <Input
                 borderColor={"grey"}
-                focusBorderColor="black"
+                focusBorderColor="grey"
                 color={"gray"}
                 fontFamily={"Ubuntu"}
                 fontSize={"16px"}
@@ -70,7 +83,7 @@ const Contact = () => {
               <Input
                 type="email"
                 borderColor={"grey"}
-                focusBorderColor="black"
+                focusBorderColor="grey"
                 color={"gray"}
                 fontFamily={"Ubuntu"}
                 fontSize={"16px"}

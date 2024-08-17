@@ -35,7 +35,7 @@ const Footer = () => {
         justifyContent={"center"}
         alignItems={"center"}
         flexDirection={"column"}
-        px={"60px"}
+        px={{ lg: "60px", base: "20px" }}
         py={"20px"}
         gap={"10px"}
       >
@@ -49,7 +49,11 @@ const Footer = () => {
                 alignItems={"center"}
                 gap={1}
               >
-                <Flex key={index} width={"35px"} height={"35px"}>
+                <Flex
+                  key={index}
+                  width={{ lg: "25px", base: "20px" }}
+                  height={{ lg: "25px", base: "20px" }}
+                >
                   <Image src={item.logo} width={"100%"} height={"100%"} />
                 </Flex>
                 <Flex>
@@ -57,6 +61,7 @@ const Footer = () => {
                     fontFamily={"Ubuntu"}
                     color={"#f1f2f3"}
                     textAlign={"center"}
+                    fontSize={{ lg: "16px", base: "14px" }}
                   >
                     {item.label}
                   </Text>
@@ -68,7 +73,12 @@ const Footer = () => {
         <Divider bg={"#E5E4E2"} maxW={"100%"} h={"1px"} />
         <Flex flexDirection={"column"} gap={"2px"}>
           {text.map((item, index) => (
-            <Text key={index} textAlign={"center"} color={"#f1f2f3"}>
+            <Text
+              key={index}
+              textAlign={"center"}
+              fontSize={{ lg: "16px", base: "14px" }}
+              color={"#f1f2f3"}
+            >
               {item.label}
             </Text>
           ))}

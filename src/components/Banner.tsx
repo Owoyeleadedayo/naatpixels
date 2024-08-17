@@ -15,10 +15,10 @@ const Banner = () => {
           bgColor={"#f1f2f3"}
           width={"100%"}
           height={"100%"}
-          px={"60px"}
+          px={{ lg: "60px", base: "20px" }}
           py={"40px"}
           flexDir={"column"}
-          gap={"30px"}
+          gap={{ lg: "30px", base: "10px" }}
           pt={"80px"}
         >
           <motion.div
@@ -33,7 +33,10 @@ const Banner = () => {
             viewport={{ once: true }}
           >
             <Flex>
-              <Flex width={"40px"} height={"40px"}>
+              <Flex
+                width={{ lg: "40px", base: "30px" }}
+                height={{ lg: "40px", base: "30px" }}
+              >
                 <Image
                   src={GPS}
                   width={"100%"}
@@ -42,14 +45,21 @@ const Banner = () => {
                   alt="gps"
                 />
               </Flex>
-              <Flex pt={"10px"}>
-                <Text fontFamily={"Ubuntu"} fontWeight={400}>
+              <Flex pt={{ lg: "10px", base: "8px" }}>
+                <Text
+                  fontFamily={"Ubuntu"}
+                  fontWeight={400}
+                  fontSize={{ lg: "16px", base: "13px" }}
+                >
                   Lagos, Nigeria
                 </Text>
               </Flex>
             </Flex>
           </motion.div>
-          <Flex gap={"30px"}>
+          <Flex
+            flexDirection={{ lg: "row", base: "column" }}
+            gap={{ lg: "30px", base: "10px" }}
+          >
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -61,8 +71,8 @@ const Banner = () => {
               viewport={{ once: true }}
             >
               <Flex>
-                <Heading fontFamily={"Ubuntu"} textTransform={"uppercase"}>
-                  I’m Naat – a passionate photographer with over 4 years of
+                <Heading fontSize={{lg: "29px", base: "18px"}} fontFamily={"Ubuntu"} textTransform={"uppercase"}>
+                  Hi, I’m Naat – a passionate photographer with over 4 years of
                   experience, dedicated to capturing compelling and visually
                   stunning imagery.
                 </Heading>
@@ -78,8 +88,8 @@ const Banner = () => {
               }}
               viewport={{ once: true }}
             >
-              <Flex pt={"70px"}>
-                <Text fontFamily={"Ubuntu"}>
+              <Flex pt={{lg:"40px", base: "0px"}}>
+                <Text fontFamily={"Ubuntu"} fontSize={{lg: "17px", base: "16px"}} fontWeight={500}>
                   Welcome to my portfolio! I’m passionate about working on
                   diverse projects and am open to freelance opportunities. Take
                   a look at my work, and feel free to reach out to discuss how
@@ -98,7 +108,7 @@ const Banner = () => {
             }}
             viewport={{ once: true }}
           >
-            <Flex position={'relative'}>
+            <Flex position={"relative"}>
               <Image
                 src={Ban}
                 width={"100%"}

@@ -15,15 +15,23 @@ const Banner = () => {
         bgColor={"#f1f2f3"}
         width={"100%"}
         height={"100%"}
-        px={"60px"}
+        px={{ lg: "60px", base: "20px" }}
         py={"40px"}
-        flexDir={"row"}
-        gap={"30px"}
+        flexDir={{ lg: "row", base: "column" }}
+        gap={{ lg: "30px", base: "10px" }}
         pt={"80px"}
       >
-        <Flex flexDirection={"column"} maxW={"600px"} gap={"30px"}>
-          <Heading fontFamily={"Ubuntu"} textTransform={"uppercase"}>
-            I’m Naat – a passionate photographer with over 4 years of
+        <Flex
+          flexDirection={"column"}
+          maxW={"600px"}
+          gap={{ lg: "30px", base: "15px" }}
+        >
+          <Heading
+            fontSize={{ lg: "30px", base: "18px" }}
+            fontFamily={"Ubuntu"}
+            textTransform={"uppercase"}
+          >
+            Hi, I’m Naat – a passionate photographer with over 4 years of
             experience, based in Lagos, Nigeria.
           </Heading>
           <Text fontFamily={"Ubuntu"} maxW={"400px"}>
@@ -34,7 +42,14 @@ const Banner = () => {
             screen. I have also collaborated with brands on a smaller scale and
             gearing towards expanding my brand in this business of people.
           </Text>
-          //Key Character
+          <Text
+            fontFamily={"Ubuntu"}
+            color={"grey"}
+            fontStyle={"italic"}
+            mb={2}
+          >
+            // Key Character
+          </Text>
           <Flex>
             {char.map((item, index) => (
               <Button
@@ -44,7 +59,7 @@ const Banner = () => {
                 variant={"gradient"}
                 fontFamily={"Ubuntu"}
                 fontWeight={400}
-                textTransform={'capitalize'}
+                textTransform={"capitalize"}
                 mr={3}
               >
                 {item.label}
