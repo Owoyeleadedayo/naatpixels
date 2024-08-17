@@ -14,7 +14,7 @@ const Contact = () => {
           py={"40px"}
           flexDir={"row"}
           gap={"30px"}
-          pt={"100px"}
+          pt={"130px"}
         >
           <Flex width={"50%"}>
             <motion.div
